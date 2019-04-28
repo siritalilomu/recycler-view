@@ -10,10 +10,12 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+//    private static final String URL_DATA = "https://simplifiedcoding.net/demos/marvel/";
+
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
 
-    private List<Store> listItems;
+    private List<Item> listItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         listItems = new ArrayList<>();
 
         for (int i = 1; i <= 20; i++) {
-            Store item = new Store(
-                    "Title " + i,
+            Item item = new Item(
+                    " My Title " + i,
                     "Lorem ipsum dummy content text"
             );
 

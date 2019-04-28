@@ -1,11 +1,11 @@
 package com.siri.recyclerview;
 
-public class Store {
+public class Item {
 
     private String title;
     private String content;
 
-    public Store(String title, String content) {
+    public Item(String title, String content) {
         this.title = title;
         this.content = content;
     }
@@ -18,6 +18,6 @@ public class Store {
         return content;
     }
 
-
+// https://simplifiedcoding.net/demos/marvel/
 
 }

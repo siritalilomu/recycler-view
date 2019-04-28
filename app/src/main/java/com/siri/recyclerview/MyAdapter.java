@@ -1,8 +1,6 @@
 package com.siri.recyclerview;
 
-import android.app.LauncherActivity;
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +11,10 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-    private List<Store> listItems;
+    private List<Item> listItems;
     private Context context;
 
-    public MyAdapter(List<Store> listItems, Context context) {
+    public MyAdapter(List<Item> listItems, Context context) {
         this.listItems = listItems;
         this.context = context;
     }
@@ -31,7 +29,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Store listItem = listItems.get(position);
+        Item listItem = listItems.get(position);
 
         holder.textViewTitle.setText(listItem.getTitle());
         holder.textViewContent.setText(listItem.getContent());
